@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la música occidental 1 - Parte 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .video-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .video {
+            flex: 1;
+            position: relative;
+            padding-bottom: 50.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-item img {
+            width: 100%;
+            min-width: 200px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .title {
+            flex: 1;
+            font-size: 1.2em;
+        }
+        .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .name, .composer, .period, .genre {
+            margin-top: 5px;
+        }
+        @media only screen and (max-width: 579px) {
+            .mobile-content{ display: block !important; }
+            .video{ display: none !important; }
+            .video-item {
+                margin-bottom: 6rem;
+            }
+        }
+        @media only screen and (min-width: 580px) {
+            .mobile-content{ display: none !important; }
+            .video{ display: block !important; }
+        }
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .video-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .video iframe {
+                position: relative;
+                min-height:400px;
+            }
+            .video {
+                padding-bottom: 0%;
+            }
+            .title {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <h1>UNPHU - Piezas para Historia de la música occidental 1</h1>
+   <h2>Parte 1</h2>
+    <div><a href="https://leon486.github.io/historia1parte1examen/">Examen de práctica</a></div>
+    <div class="container">
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=IHvsq1OSzwo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/IHvsq1OSzwo/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/IHvsq1OSzwo"
+                        frameborder="0"
+                        class="desktop-content"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="title">
+              <div class="number">1</div>
+              <div class="name">Nombre: Himno a Nikkal</div>
+              <div class="composer">Compositor: Hammurapi</div>
+              <div class="period">Período: Antigüo</div>
+              <div class="genre">Género: Himno</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=6-2IR4mpf7U" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/6-2IR4mpf7U/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/6-2IR4mpf7U"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">2</div>
+              <div class="name">Nombre: Epitafio de Seikilos</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Antigüo</div>
+              <div class="genre">Género: Canción (Melodía)</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=W4rYZmEnZO8" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/W4rYZmEnZO8/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W4rYZmEnZO8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="title">
+              <div class="number">3</div>
+              <div class="name">Nombre: Organum paralelo por quintas Tu patris sempiternus (Música Enchiriadis)</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Organum</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=5Zah4VWPiNE" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/5Zah4VWPiNE/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/5Zah4VWPiNE" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">4</div>
+              <div class="name">Nombre: A chantar m'er de so q'ieu no voldria</div>
+              <div class="composer">Compositor: Beatriz de Dia</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canción</div>
+            </div>
+        </div>
+        
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=QP_C0HSWKIk" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/QP_C0HSWKIk/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/QP_C0HSWKIk"
+                        height="315"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+                </div>
+            <div class="title">
+              <div class="number">5</div>
+              <div class="name">Nombre: Cum Statua</div>
+              <div class="composer">Compositor: Phillippe de Vitry</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Motete</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=8Z8rt3hHUEY" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/8Z8rt3hHUEY/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/8Z8rt3hHUEY" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">6</div>
+              <div class="name">Nombre: Douce dame jolie</div>
+              <div class="composer">Compositor: Guillaume de Machaut</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Virelay</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=srr_uPB0esI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/srr_uPB0esI/0.jpg" alt="Tecum Principium">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/srr_uPB0esI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">7</div>
+              <div class="name">Nombre: Tecum Principium</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canto viejo romano</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=wGPZWUNwLG0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/wGPZWUNwLG0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/wGPZWUNwLG0" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">8</div>
+              <div class="name">Nombre: Ordo virtutum</div>
+              <div class="composer">Compositor: Hildegard Von Bingen</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Drama Litúrgico</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=TA4owaNkf-0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/TA4owaNkf-0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TA4owaNkf-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">9</div>
+              <div class="name">Nombre: Ecco La Primavera</div>
+              <div class="composer">Compositor: Landini</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Ballata</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=hOoYtdFhfqw" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/hOoYtdFhfqw/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/hOoYtdFhfqw" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">10</div>
+              <div class="name">Nombre: J'aim sans penser</div>
+              <div class="composer">Compositor: Guillaume de Machaut</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Virelay (Forma fija)</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=NdSJYgjMIfQ" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/NdSJYgjMIfQ/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/NdSJYgjMIfQ" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">11</div>
+              <div class="name">Nombre: Estampie</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Estampie (Danza Medieval)</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=jkp2GHBRUiQ" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/jkp2GHBRUiQ/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/jkp2GHBRUiQ" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">12</div>
+              <div class="name">Nombre: Can vei la lauzeta</div>
+              <div class="composer">Compositor: Bernart de Ventadorn</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canción(poema)</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=dyrGsG46Gcw" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/dyrGsG46Gcw/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dyrGsG46Gcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">13</div>
+              <div class="name">Nombre: Cantiga 159: Non sofre Sancta Maria</div>
+              <div class="composer">Compositor: Alfonso X el sabio</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Cantiga</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=r0jI8_oRm-A" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/r0jI8_oRm-A/0.jpg" alt="Canto Gregoriano. Viderunt Omnes">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/r0jI8_oRm-A" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">14</div>
+              <div class="name">Nombre: Viderunt Omnes.</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canto Gregoriano</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=jo6trJ-sQ0k" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/jo6trJ-sQ0k/0.jpg" alt="Ut Queant Laxis">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/jo6trJ-sQ0k" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">15</div>
+              <div class="name">Nombre: Ut Queant Laxis - Himno San Juan Bautista</div>
+              <div class="composer">Compositor: Pablo el Diacono</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Himno</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=bydqNRYgbuc" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/bydqNRYgbuc/0.jpg" alt="Second Delphic Hymn to Apollo">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/bydqNRYgbuc" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">16</div>
+              <div class="name">Nombre: Segundo Hymno Delfico de Apollo</div>
+              <div class="composer">Compositor: Limenio, Hijo de Teno</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Himno</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=Ao3TtD8EbbI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/Ao3TtD8EbbI/0.jpg" alt="Così pensoso">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Ao3TtD8EbbI" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">17</div>
+              <div class="name">Nombre: Così pensoso</div>
+              <div class="composer">Compositor: Francesco Landini</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Caccia</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=iLKKwuirSoo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/iLKKwuirSoo/0.jpg" alt="Motete">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/iLKKwuirSoo" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">18</div>
+              <div class="name">Nombre: Factum est salutare/Dominus</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Motete</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=vmrWX3B5sqo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/vmrWX3B5sqo/0.jpg" alt="Sumer is Icumen">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/vmrWX3B5sqo" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">19</div>
+              <div class="name">Nombre: Sumer is Icumen</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canon</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=zNNm-wnfZ-U" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/zNNm-wnfZ-U/0.jpg" alt="Le jeu de Robin et Marion">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/zNNm-wnfZ-U" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">20</div>
+              <div class="name">Nombre: Le jeu de Robin et Marion</div>
+              <div class="composer">Compositor: Adam de la Halle</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Obra secular francesa</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=rMnXhAFW0vc" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/rMnXhAFW0vc/0.jpg" alt="Palästinalied">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/rMnXhAFW0vc" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">21</div>
+              <div class="name">Nombre: Palästinalied - (Canción de soldados cruzados Alemanes)</div>
+              <div class="composer">Compositor: Walther von der Vogelweide</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canción de Cruzada</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=2h_6pRLMBEo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/2h_6pRLMBEo/0.jpg" alt="Conductus: Ave Virgo virginum">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/2h_6pRLMBEo" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">22</div>
+              <div class="name">Nombre: Conductus: Ave Virgo virginum</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Conductus</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=E76WxP4OlvI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/E76WxP4OlvI/0.jpg" alt="Alma Redemptoris Mater">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/E76WxP4OlvI" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">23</div>
+              <div class="name">Nombre: Alma Redemptoris Mater</div>
+              <div class="composer">Compositor: Hermann von Reichenau</div>
+              <div class="period">Período: Medieval</div>
+              <div class="genre">Género: Canto Gregoriano</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">v1.1.1 - Ultima actualización 10 de Marzo 2025</div>
+</body>
+</html>
