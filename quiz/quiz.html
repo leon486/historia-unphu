@@ -382,7 +382,7 @@
 
             answersWithIndexes.forEach(({ answer, index: i }) => {
                             const label = document.createElement("label");
-                            label.innerHTML = `<span style='font-size: 0.8rem'><input type="radio" name="question${index}" value="${i}"> ${answer.author} - ${answer.name}<br />${answer.period} | ${answer.genre}</span>`;
+                            label.innerHTML = `<span style='font-size: 0.8rem; display: flex; flex-direction: column'><input type="radio" name="question${index}" value="${i}"> <span>${answer.name}<br /> ${answer.author}<br />${answer.period} <br />${answer.genre}</span></span>`;
                             label.addEventListener("click", () => {
                                 audioPlayer.pause();
                                 audioPlayer.currentTime = 0;
