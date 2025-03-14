@@ -100,29 +100,29 @@
       ]
       
       const answers_01_01 = {
-          himnoNikkal: "Hammurapi - Himno a Nikkal",
-          epitafioSikilos: "Anónimo - Epitafio de Seikilos",
-          tuPatrisSeptiernus: "Anónimo - Organum Paralelo por Quintas: Tu Patris Sempiternus",
-          beatrizAChantar: "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
-          vitryCumStatua: "Philippe de Vitry - Cum statua",
-          machautDouceDame: "Guillaume de Machaut - Douce dame jolie", // 5
-          tecumPrincipium: "Anónimo - Tecum Principium",
-          hildgardOrdo: "Hildegard Von Bingen - Ordo Virtutum",
-          landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",  // 8
-          machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
-          estampie: "Anónimo - Estampie",
-          bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
-          cantiga159NonSofreMaria: "Alfonso X el sabio - Cantiga 159:Non sofre Santa Maria",
-          cantoGregorianoVideruntOmnes: "Anónimo - Viderunt Omnes",
-          guidoDarezzoUtQueantLaxis: "Pablo el Diacono - Ut Queant Laxis",
-          segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
-          landiniCosiPenoso: "Francesco Landini - Così Pensoso",
-          motete: "Anónimo - Factum est salutare/Dominus",
-          sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
-          adamDeLaHalleLeJeuDeRobin: "Adam de la Halle - Le Jeu de Robin et Marion",
-          crusadersPalastinalied: "Walther von der Vogelweide - Palästinalied (Canción de soldados cruzados Alemanes)",
-          conductusAveVirgoVirginum: "Anónimo - Ave Virgo Virginum",
-          almaRedemptorisMater: "Hermann von Reichenau - Alma Redemptoris Mater",
+        himnoNikkal: {author: "Hammurapi" name: "Himno a Nikkal", period: "antiguo", genre: "Himno", filename: "01-01/01.himnoANikkal.mp3"}
+        epitafioSikilos: {author: "Anónimo" name: "Epitafio de Seikilos", period: "antiguo", genre: "Canción", filename: "01-01/02.EpitafioDeSeikilos.mp3"}
+        tuPatrisSeptiernus: "Anónimo - Organum Paralelo por Quintas: Tu Patris Sempiternus",
+        beatrizAChantar: "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+        vitryCumStatua: "Philippe de Vitry - Cum statua",
+        machautDouceDame: "Guillaume de Machaut - Douce dame jolie",
+        tecumPrincipium: "Anónimo - Tecum Principium",
+        hildgardOrdo: "Hildegard Von Bingen - Ordo Virtutum",
+        landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",
+        machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser",
+        estampie: "Anónimo - Estampie",
+        bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
+        cantiga159NonSofreMaria: "Alfonso X el sabio - Cantiga 159:Non sofre Santa Maria",
+        cantoGregorianoVideruntOmnes: "Anónimo - Viderunt Omnes",
+        guidoDarezzoUtQueantLaxis: "Pablo el Diacono - Ut Queant Laxis",
+        segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
+        landiniCosiPenoso: "Francesco Landini - Così Pensoso",
+        motete: "Anónimo - Factum est salutare/Dominus",
+        sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
+        adamDeLaHalleLeJeuDeRobin: "Adam de la Halle - Le Jeu de Robin et Marion",
+        crusadersPalastinalied: "Walther von der Vogelweide - Palästinalied (Canción de soldados cruzados Alemanes)",
+        conductusAveVirgoVirginum: "Anónimo - Ave Virgo Virginum",
+        almaRedemptorisMater: "Hermann von Reichenau - Alma Redemptoris Mater",
       }
       
         const quiz_01_01 = [
@@ -137,7 +137,7 @@
                 correct: 0
             },
             { 
-                audio: "2.EpitafioDeSeikilos.mp3", 
+                audio: "02.EpitafioDeSeikilos.mp3", 
                 answers: [
                   answers_01_01.epitafioSikilos,
                   answers_01_01.himnoNikkal,
@@ -147,7 +147,7 @@
                 correct: 0 
             },
             { 
-                audio: "3.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
+                audio: "03.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
                 answers: [
                   answers_01_01.tuPatrisSeptiernus,
                   answers_01_01.cantoGregorianoVideruntOmnes,
@@ -157,7 +157,7 @@
                 correct: 0
             },
             { 
-                audio: "4.BeatrizDeDiaAChantar.mp3", 
+                audio: "04.BeatrizDeDiaAChantar.mp3", 
                 answers: [
                   answers_01_01.beatrizAChantar,
                   answers_01_01.hildgardOrdo,
@@ -167,7 +167,7 @@
                 correct: 0
             },
             { 
-                audio: "5.PhilippeDeVitry_CumStatua.mp3", 
+                audio: "05.PhilippeDeVitry_CumStatua.mp3", 
                 answers: [
                   answers_01_01.vitryCumStatua,
                   answers_01_01.hildgardOrdo,
@@ -177,7 +177,7 @@
                 correct: 0 
             },
             { 
-                audio: "6.GuillaumeDeMachaut_DouceDameJolie.mp3", 
+                audio: "06.GuillaumeDeMachaut_DouceDameJolie.mp3", 
                 answers: [
                   answers_01_01.vitryCumStatua,
                   answers_01_01.hildgardOrdo,
@@ -187,7 +187,7 @@
                 correct: 2 
             },
             { 
-                audio: "7.OldRomanChant_TecumPrincipium.mp3", 
+                audio: "07.OldRomanChant_TecumPrincipium.mp3", 
                 answers: [
                   answers_01_01.tecumPrincipium,
                   answers_01_01.cantoGregorianoVideruntOmnes,
@@ -197,7 +197,7 @@
                 correct: 0 
             },
             { 
-                audio: "8.HildegardVinBingen_OrdoVirtutum.mp3", 
+                audio: "08.HildegardVinBingen_OrdoVirtutum.mp3", 
                 answers: [
                   answers_01_01.machautDouceDame,
                   answers_01_01.hildgardOrdo,
@@ -207,7 +207,7 @@
                 correct: 1
             },
             { 
-                audio: "9.FrancescoLandini_EccoLaPrimavera.mp3", 
+                audio: "09.FrancescoLandini_EccoLaPrimavera.mp3", 
                 answers: [
                   answers_01_01.machautDouceDame,
                   answers_01_01.landiniEccoPrimavera,
