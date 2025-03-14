@@ -17,23 +17,89 @@
         .question { margin-bottom: 4rem; }
         .result { font-weight: bold; margin-top: 10px; }
     </style>
+    <script>
+
+      
+      const shuffleArray = (array) => {
+          for (let i = array.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [array[i], array[j]] = [array[j], array[i]];
+          }
+      }
+      
+      const findGetParameter = (parameterName) => {
+          var result = null,
+              tmp = [];
+          var items = location.search.substr(1).split("&");
+          for (var index = 0; index < items.length; index++) {
+              tmp = items[index].split("=");
+              if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+          }
+          return result;
+      }
+            const level = findGetParameter('level') ? findGetParameter('level') :  "01_02"
+      </script>
   </head>
   <body>
     <div class="quiz-container">
-      <h2>
-        Examen de práctica - Audios Historia 1 Parte 1
+      <h2 id="title">
+        Examen de práctica - Audios Historia
       </h2>
-      <div><a href="https://leon486.github.io/historia1videos1/">Lista de canciones</a></div>
+      <div><a href="https://leon486.github.io/historia-unphu/">Lista de canciones </a></div>
       <div id="quiz"></div>
     </div>
     <script>
-
-      const 01_02 = {
-          alleluiaAneweWork: { name: "Alleluia A newe work", author: "John Dunstable", genre: "Renacimiento", period: "Carol", filename: "JohnDunstable_AlleluiaAneweWork.mp3"},
-          QuamPulchraEs: { name: "Alleluia A newe work", author: "John Dunstable", genre: "Renacimiento", period: "Carol", filename: "JohnDunstable_QuamPulchraEs.mp3"},
-      }
       
-      const answers = {
+
+      const answers_01_02 = {
+          alleluiaANeweWork: {
+            name: "Alleluia A newe work",
+            author: "John Dunstable",
+            period: "Renacimiento",
+            genre: "Carol",
+            filename: "JohnDunstable_AlleluiaAneweWork.mp3"
+          },
+          QuamPulchraEs: {
+            name: "Quam pulchra es", author: "John Dunstable", period: "Renacimiento", genre: "Antífona", filename: "JohnDunstable_QuamPulchraEs.mp3"
+          },
+          SeLaFaceAyPale: {
+            name: "Se la face ay Pale", author: "Guillaume Dufay", period: "Renacimiento", genre: "Ballade", filename: "JohnDunstable_QuamPulchraEs.mp3"
+          },
+          JeNePuisVivreAinsi: {
+            name: "Je ne Puis Vivre Ainsi", author: "Antoine Busnoys", period: "Renacimiento", genre: "Chanson", filename: "JohnDunstable_QuamPulchraEs.mp3"
+          },
+          OrsuOrsuCarSignori: {
+            name: "Orsú orsú car' Signori", author: "???", period: "Renacimiento", genre: "???", filename: "JohnDunstable_QuamPulchraEs.mp3"
+          },
+          VeniSacteSpiritus: {
+            name: "Veni Sancte Spiritus / Veni Creator Spiritus", author: "John Dunstable", period: "Renacimiento", genre: "???", filename: "JohnDunstable_QuamPulchraEs.mp3"
+          },
+      }
+
+      const quiz_01_02 = [
+            { 
+                audio: answers_01_02.alleluiaANeweWork.filename, 
+                answers: [
+                  answers_01_02.alleluiaANeweWork,
+                  answers_01_02.QuamPulchraEs,
+                  answers_01_02.SeLaFaceAyPale,
+                  answers_01_02.VeniSacteSpiritus
+                ],
+                correct: 0
+            },
+            { 
+                audio: answers_01_02.QuamPulchraEs.filename, 
+                answers: [
+                  answers_01_02.QuamPulchraEs,
+                  answers_01_02.alleluiaANeweWork,
+                  answers_01_02.SeLaFaceAyPale,
+                  answers_01_02.VeniSacteSpiritus
+                ],
+                correct: 0
+            },
+      ]
+      
+      const answers_01_01 = {
           himnoNikkal: "Hammurapi - Himno a Nikkal",
           epitafioSikilos: "Anónimo - Epitafio de Seikilos",
           tuPatrisSeptiernus: "Anónimo - Organum Paralelo por Quintas: Tu Patris Sempiternus",
@@ -59,241 +125,242 @@
           almaRedemptorisMater: "Hermann von Reichenau - Alma Redemptoris Mater",
       }
       
-        const quizData = [
+        const quiz_01_01 = [
             { 
                 audio: "01.himnoANikkal.mp3", 
                 answers: [
-                  answers.himnoNikkal,
-                  answers.epitafioSikilos,
-                  answers.sumerIsAcumen,
-                  answers.almaRedemptorisMater
+                  answers_01_01.himnoNikkal,
+                  answers_01_01.epitafioSikilos,
+                  answers_01_01.sumerIsAcumen,
+                  answers_01_01.almaRedemptorisMater
                 ],
                 correct: 0
             },
             { 
                 audio: "2.EpitafioDeSeikilos.mp3", 
                 answers: [
-                  answers.epitafioSikilos,
-                  answers.himnoNikkal,
-                  answers.sumerIsAcumen,
-                  answers.almaRedemptorisMater
+                  answers_01_01.epitafioSikilos,
+                  answers_01_01.himnoNikkal,
+                  answers_01_01.sumerIsAcumen,
+                  answers_01_01.almaRedemptorisMater
                 ],
                 correct: 0 
             },
             { 
                 audio: "3.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
                 answers: [
-                  answers.tuPatrisSeptiernus,
-                  answers.cantoGregorianoVideruntOmnes,
-                  answers.tecumPrincipium,
-                  answers.sumerIsAcumen,
+                  answers_01_01.tuPatrisSeptiernus,
+                  answers_01_01.cantoGregorianoVideruntOmnes,
+                  answers_01_01.tecumPrincipium,
+                  answers_01_01.sumerIsAcumen,
                 ],
                 correct: 0
             },
             { 
                 audio: "4.BeatrizDeDiaAChantar.mp3", 
                 answers: [
-                  answers.beatrizAChantar,
-                  answers.hildgardOrdo,
-                  answers.machautJaimSans,
-                  answers.vitryCumStatua
+                  answers_01_01.beatrizAChantar,
+                  answers_01_01.hildgardOrdo,
+                  answers_01_01.machautJaimSans,
+                  answers_01_01.vitryCumStatua
                 ],
                 correct: 0
             },
             { 
                 audio: "5.PhilippeDeVitry_CumStatua.mp3", 
                 answers: [
-                  answers.vitryCumStatua,
-                  answers.hildgardOrdo,
-                  answers.machautDouceDame,
-                  answers.beatrizAChantar,
+                  answers_01_01.vitryCumStatua,
+                  answers_01_01.hildgardOrdo,
+                  answers_01_01.machautDouceDame,
+                  answers_01_01.beatrizAChantar,
                 ],
                 correct: 0 
             },
             { 
                 audio: "6.GuillaumeDeMachaut_DouceDameJolie.mp3", 
                 answers: [
-                  answers.vitryCumStatua,
-                  answers.hildgardOrdo,
-                  answers.machautDouceDame,
-                  answers.beatrizAChantar,
+                  answers_01_01.vitryCumStatua,
+                  answers_01_01.hildgardOrdo,
+                  answers_01_01.machautDouceDame,
+                  answers_01_01.beatrizAChantar,
                 ],
                 correct: 2 
             },
             { 
                 audio: "7.OldRomanChant_TecumPrincipium.mp3", 
                 answers: [
-                  answers.tecumPrincipium,
-                  answers.cantoGregorianoVideruntOmnes,
-                  answers.sumerIsAcumen,
-                  answers.guidoDarezzoUtQueantLaxis,
+                  answers_01_01.tecumPrincipium,
+                  answers_01_01.cantoGregorianoVideruntOmnes,
+                  answers_01_01.sumerIsAcumen,
+                  answers_01_01.guidoDarezzoUtQueantLaxis,
                 ],
                 correct: 0 
             },
             { 
                 audio: "8.HildegardVinBingen_OrdoVirtutum.mp3", 
                 answers: [
-                  answers.machautDouceDame,
-                  answers.hildgardOrdo,
-                  answers.sumerIsAcumen,
-                  answers.beatrizAChantar,
+                  answers_01_01.machautDouceDame,
+                  answers_01_01.hildgardOrdo,
+                  answers_01_01.sumerIsAcumen,
+                  answers_01_01.beatrizAChantar,
                 ],
                 correct: 1
             },
             { 
                 audio: "9.FrancescoLandini_EccoLaPrimavera.mp3", 
                 answers: [
-                  answers.machautDouceDame,
-                  answers.landiniEccoPrimavera,
-                  answers.vitryCumStatua,
-                  answers.landiniCosiPenoso
+                  answers_01_01.machautDouceDame,
+                  answers_01_01.landiniEccoPrimavera,
+                  answers_01_01.vitryCumStatua,
+                  answers_01_01.landiniCosiPenoso
                 ],
                 correct: 1
             },
             { 
                 audio: "10.GuillaumeDeMachaut-JaimSansPenser.mp3", 
                 answers: [
-                  answers.machautJaimSans,
-                  answers.machautDouceDame,
-                  answers.beatrizAChantar,
-                  answers.landiniCosiPenoso
+                  answers_01_01.machautJaimSans,
+                  answers_01_01.machautDouceDame,
+                  answers_01_01.beatrizAChantar,
+                  answers_01_01.landiniCosiPenoso
                 ],
                 correct: 0
             },
             { 
                 audio: "11.Anonimo_estampie.mp3", 
                 answers: [
-                  answers.estampie,
-                  answers.machautJaimSans,
-                  answers.beatrizAChantar,
-                  answers.landiniCosiPenoso
+                  answers_01_01.estampie,
+                  answers_01_01.machautJaimSans,
+                  answers_01_01.beatrizAChantar,
+                  answers_01_01.landiniCosiPenoso
                 ],
                 correct: 0
             },
             { 
                 audio: "12.Ventadorn_CanVeiLaLauzeta.mp3", 
                 answers: [
-                  answers.bernartVentadorLauzeta,
-                  answers.machautJaimSans,
-                  answers.beatrizAChantar,
-                  answers.landiniCosiPenoso
+                  answers_01_01.bernartVentadorLauzeta,
+                  answers_01_01.machautJaimSans,
+                  answers_01_01.beatrizAChantar,
+                  answers_01_01.landiniCosiPenoso
                 ],
                 correct: 0
             },
             { 
                 audio: "13.Cantiga159_NonSofreSantaMaria.mp3", 
                 answers: [
-                  answers.cantiga159NonSofreMaria,
-                  answers.segundoHimnoDelficoApollo,
-                  answers.estampie,
-                  answers.landiniEccoPrimavera,
+                  answers_01_01.cantiga159NonSofreMaria,
+                  answers_01_01.segundoHimnoDelficoApollo,
+                  answers_01_01.estampie,
+                  answers_01_01.landiniEccoPrimavera,
                 ],
                 correct: 0
             },
             { 
                 audio: "14.cantoGregoriano_videruntOmnes.mp3", 
                 answers: [
-                  answers.cantoGregorianoVideruntOmnes,
-                  answers.motete,
-                  answers.tuPatrisSeptiernus,
-                  answers.almaRedemptorisMater,
+                  answers_01_01.cantoGregorianoVideruntOmnes,
+                  answers_01_01.motete,
+                  answers_01_01.tuPatrisSeptiernus,
+                  answers_01_01.almaRedemptorisMater,
                 ],
                 correct: 0
             },
             { 
                 audio: "15.GuidoDarezzo_UtQueantLaxis.mp3", 
                 answers: [
-                  answers.guidoDarezzoUtQueantLaxis,
-                  answers.cantoGregorianoVideruntOmnes,
-                  answers.tuPatrisSeptiernus,
-                  answers.almaRedemptorisMater,
+                  answers_01_01.guidoDarezzoUtQueantLaxis,
+                  answers_01_01.cantoGregorianoVideruntOmnes,
+                  answers_01_01.tuPatrisSeptiernus,
+                  answers_01_01.almaRedemptorisMater,
                 ],
                 correct: 0
             },{ 
                 audio: "16.SegundoHimnoDelficoaApollo.mp3", 
                 answers: [
-                  answers.segundoHimnoDelficoApollo,
-                  answers.guidoDarezzoUtQueantLaxis,
-                  answers.tuPatrisSeptiernus,
-                  answers.almaRedemptorisMater,
+                  answers_01_01.segundoHimnoDelficoApollo,
+                  answers_01_01.guidoDarezzoUtQueantLaxis,
+                  answers_01_01.tuPatrisSeptiernus,
+                  answers_01_01.almaRedemptorisMater,
                 ],
                 correct: 0
           },{ 
               audio: "17.Landini_cosiPensoso.mp3", 
               answers: [
-                answers.landiniCosiPenoso,
-                answers.landiniEccoPrimavera,
-                answers.segundoHimnoDelficoApollo,
-                answers.sumerIsAcumen,
+                answers_01_01.landiniCosiPenoso,
+                answers_01_01.landiniEccoPrimavera,
+                answers_01_01.segundoHimnoDelficoApollo,
+                answers_01_01.sumerIsAcumen,
               ],
               correct: 0
             },{ 
             audio: "18.Motete_FactumEstSalutareDominus.mp3", 
             answers: [
-              answers.motete,
-              answers.cantoGregorianoVideruntOmnes,
-              answers.tuPatrisSeptiernus,
-              answers.almaRedemptorisMater,
+              answers_01_01.motete,
+              answers_01_01.cantoGregorianoVideruntOmnes,
+              answers_01_01.tuPatrisSeptiernus,
+              answers_01_01.almaRedemptorisMater,
             ],
             correct: 0
           },{ 
               audio: "19.SumerIsIcumenIn.mp3", 
               answers: [
-                answers.sumerIsAcumen,
-                answers.motete,
-                answers.estampie,
-                answers.almaRedemptorisMater,
+                answers_01_01.sumerIsAcumen,
+                answers_01_01.motete,
+                answers_01_01.estampie,
+                answers_01_01.almaRedemptorisMater,
               ],
               correct: 0
             },{ 
             audio: "20.AdamdelaHalle_LeJeudeRobinEtMarion.mp3", 
             answers: [
-              answers.adamDeLaHalleLeJeuDeRobin,
-              answers.bernartVentadorLauzeta,
-              answers.machautJaimSans,
-              answers.estampie,
+              answers_01_01.adamDeLaHalleLeJeuDeRobin,
+              answers_01_01.bernartVentadorLauzeta,
+              answers_01_01.machautJaimSans,
+              answers_01_01.estampie,
             ],
             correct: 0
           },{ 
               audio: "21.CanciondeSoldadosCruzadosAlemanes_Palastinalied.mp3",
               answers: [
-                answers.crusadersPalastinalied,
-                answers.adamDeLaHalleLeJeuDeRobin,
-                answers.estampie,
-                answers.motete,
+                answers_01_01.crusadersPalastinalied,
+                answers_01_01.adamDeLaHalleLeJeuDeRobin,
+                answers_01_01.estampie,
+                answers_01_01.motete,
               ],
               correct: 0
         },{ 
             audio: "22.Conductus_AveVirgoVirginum.mp3",
             answers: [
-              answers.conductusAveVirgoVirginum,
-              answers.machautDouceDame,
-              answers.vitryCumStatua,
-              answers.almaRedemptorisMater,
+              answers_01_01.conductusAveVirgoVirginum,
+              answers_01_01.machautDouceDame,
+              answers_01_01.vitryCumStatua,
+              answers_01_01.almaRedemptorisMater,
             ],
             correct: 0
           },{ 
               audio: "23.AlmaRedemptorisMater.mp3",
               answers: [
-                answers.almaRedemptorisMater,
-                answers.sumerIsAcumen,
-                answers.cantoGregorianoVideruntOmnes,
-                answers.tuPatrisSeptiernus,
+                answers_01_01.almaRedemptorisMater,
+                answers_01_01.sumerIsAcumen,
+                answers_01_01.cantoGregorianoVideruntOmnes,
+                answers_01_01.tuPatrisSeptiernus,
               ],
               correct: 0
           }
         ];
-
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
+        
+        quizes = {
+          '01_01': quiz_01_01,
+          '01_02': quiz_01_02
         }
 
+        const quizData = quizes[level]
         shuffleArray(quizData);
         
         const quizContainer = document.getElementById("quiz");
+        const titleContainer = document.getElementById("title");
+        titleContainer.textContent = `${titleContainer.textContent} ${level}`;
 
         quizData.forEach((q, index) => {
             const questionDiv = document.createElement("div");
@@ -315,7 +382,7 @@
 
             answersWithIndexes.forEach(({ answer, index: i }) => {
                             const label = document.createElement("label");
-                            label.innerHTML = `<input type="radio" name="question${index}" value="${i}"> ${answer}`;
+                            label.innerHTML = `<input type="radio" name="question${index}" value="${i}"> ${answer.author} - ${answer.name}<br />${answer.period} | ${answer.genre}`;
                             label.addEventListener("click", () => {
                                 audioPlayer.pause();
                                 audioPlayer.currentTime = 0;
@@ -353,6 +420,6 @@
             }
         }
     </script>
-        v1.9.4 Ultima modificación 10-Mar-2025
+        v1.1.0 Ultima modificación 14-Mar-2025
   </body>
 </html>
