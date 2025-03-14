@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="history.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Examen de práctica - Historia 1 UNPHU
+    </title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        .quiz-container { max-width: 600px; margin: auto; }
+        .audio-player { margin-bottom: 10px; }
+        .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; justify-content: center; }
+        .answers label { display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
+        .answers input { margin-right: 5px; }
+        .question { margin-bottom: 4rem; }
+        .result { font-weight: bold; margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h2>
+        Examen de práctica - Audios Historia 1 Parte 1
+      </h2>
+      <div><a href="https://leon486.github.io/historia1videos1/">Lista de canciones</a></div>
+      <div id="quiz"></div>
+    </div>
+    <script>
+      
+      const answers = {
+          himnoNikkal: "Hammurapi - Himno a Nikkal",
+          epitafioSikilos: "Anónimo - Epitafio de Seikilos",
+          tuPatrisSeptiernus: "Anónimo - Organum Paralelo por Quintas: Tu Patris Sempiternus",
+          beatrizAChantar: "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+          vitryCumStatua: "Philippe de Vitry - Cum statua",
+          machautDouceDame: "Guillaume de Machaut - Douce dame jolie", // 5
+          tecumPrincipium: "Anónimo - Tecum Principium",
+          hildgardOrdo: "Hildegard Von Bingen - Ordo Virtutum",
+          landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",  // 8
+          machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
+          estampie: "Anónimo - Estampie",
+          bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
+          cantiga159NonSofreMaria: "Alfonso X el sabio - Cantiga 159:Non sofre Santa Maria",
+          cantoGregorianoVideruntOmnes: "Anónimo - Viderunt Omnes",
+          guidoDarezzoUtQueantLaxis: "Pablo el Diacono - Ut Queant Laxis",
+          segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
+          landiniCosiPenoso: "Francesco Landini - Così Pensoso",
+          motete: "Anónimo - Factum est salutare/Dominus",
+          sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
+          adamDeLaHalleLeJeuDeRobin: "Adam de la Halle - Le Jeu de Robin et Marion",
+          crusadersPalastinalied: "Walther von der Vogelweide - Palästinalied (Canción de soldados cruzados Alemanes)",
+          conductusAveVirgoVirginum: "Anónimo - Ave Virgo Virginum",
+          almaRedemptorisMater: "Hermann von Reichenau - Alma Redemptoris Mater",
+      }
+      
+        const quizData = [
+            { 
+                audio: "01.himnoANikkal.mp3", 
+                answers: [
+                  answers.himnoNikkal,
+                  answers.epitafioSikilos,
+                  answers.sumerIsAcumen,
+                  answers.almaRedemptorisMater
+                ],
+                correct: 0
+            },
+            { 
+                audio: "2.EpitafioDeSeikilos.mp3", 
+                answers: [
+                  answers.epitafioSikilos,
+                  answers.himnoNikkal,
+                  answers.sumerIsAcumen,
+                  answers.almaRedemptorisMater
+                ],
+                correct: 0 
+            },
+            { 
+                audio: "3.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
+                answers: [
+                  answers.tuPatrisSeptiernus,
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.tecumPrincipium,
+                  answers.sumerIsAcumen,
+                ],
+                correct: 0
+            },
+            { 
+                audio: "4.BeatrizDeDiaAChantar.mp3", 
+                answers: [
+                  answers.beatrizAChantar,
+                  answers.hildgardOrdo,
+                  answers.machautJaimSans,
+                  answers.vitryCumStatua
+                ],
+                correct: 0
+            },
+            { 
+                audio: "5.PhilippeDeVitry_CumStatua.mp3", 
+                answers: [
+                  answers.vitryCumStatua,
+                  answers.hildgardOrdo,
+                  answers.machautDouceDame,
+                  answers.beatrizAChantar,
+                ],
+                correct: 0 
+            },
+            { 
+                audio: "6.GuillaumeDeMachaut_DouceDameJolie.mp3", 
+                answers: [
+                  answers.vitryCumStatua,
+                  answers.hildgardOrdo,
+                  answers.machautDouceDame,
+                  answers.beatrizAChantar,
+                ],
+                correct: 2 
+            },
+            { 
+                audio: "7.OldRomanChant_TecumPrincipium.mp3", 
+                answers: [
+                  answers.tecumPrincipium,
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.sumerIsAcumen,
+                  answers.guidoDarezzoUtQueantLaxis,
+                ],
+                correct: 0 
+            },
+            { 
+                audio: "8.HildegardVinBingen_OrdoVirtutum.mp3", 
+                answers: [
+                  answers.machautDouceDame,
+                  answers.hildgardOrdo,
+                  answers.sumerIsAcumen,
+                  answers.beatrizAChantar,
+                ],
+                correct: 1
+            },
+            { 
+                audio: "9.FrancescoLandini_EccoLaPrimavera.mp3", 
+                answers: [
+                  answers.machautDouceDame,
+                  answers.landiniEccoPrimavera,
+                  answers.vitryCumStatua,
+                  answers.landiniCosiPenoso
+                ],
+                correct: 1
+            },
+            { 
+                audio: "10.GuillaumeDeMachaut-JaimSansPenser.mp3", 
+                answers: [
+                  answers.machautJaimSans,
+                  answers.machautDouceDame,
+                  answers.beatrizAChantar,
+                  answers.landiniCosiPenoso
+                ],
+                correct: 0
+            },
+            { 
+                audio: "11.Anonimo_estampie.mp3", 
+                answers: [
+                  answers.estampie,
+                  answers.machautJaimSans,
+                  answers.beatrizAChantar,
+                  answers.landiniCosiPenoso
+                ],
+                correct: 0
+            },
+            { 
+                audio: "12.Ventadorn_CanVeiLaLauzeta.mp3", 
+                answers: [
+                  answers.bernartVentadorLauzeta,
+                  answers.machautJaimSans,
+                  answers.beatrizAChantar,
+                  answers.landiniCosiPenoso
+                ],
+                correct: 0
+            },
+            { 
+                audio: "13.Cantiga159_NonSofreSantaMaria.mp3", 
+                answers: [
+                  answers.cantiga159NonSofreMaria,
+                  answers.segundoHimnoDelficoApollo,
+                  answers.estampie,
+                  answers.landiniEccoPrimavera,
+                ],
+                correct: 0
+            },
+            { 
+                audio: "14.cantoGregoriano_videruntOmnes.mp3", 
+                answers: [
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.motete,
+                  answers.tuPatrisSeptiernus,
+                  answers.almaRedemptorisMater,
+                ],
+                correct: 0
+            },
+            { 
+                audio: "15.GuidoDarezzo_UtQueantLaxis.mp3", 
+                answers: [
+                  answers.guidoDarezzoUtQueantLaxis,
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.tuPatrisSeptiernus,
+                  answers.almaRedemptorisMater,
+                ],
+                correct: 0
+            },{ 
+                audio: "16.SegundoHimnoDelficoaApollo.mp3", 
+                answers: [
+                  answers.segundoHimnoDelficoApollo,
+                  answers.guidoDarezzoUtQueantLaxis,
+                  answers.tuPatrisSeptiernus,
+                  answers.almaRedemptorisMater,
+                ],
+                correct: 0
+          },{ 
+              audio: "17.Landini_cosiPensoso.mp3", 
+              answers: [
+                answers.landiniCosiPenoso,
+                answers.landiniEccoPrimavera,
+                answers.segundoHimnoDelficoApollo,
+                answers.sumerIsAcumen,
+              ],
+              correct: 0
+            },{ 
+            audio: "18.Motete_FactumEstSalutareDominus.mp3", 
+            answers: [
+              answers.motete,
+              answers.cantoGregorianoVideruntOmnes,
+              answers.tuPatrisSeptiernus,
+              answers.almaRedemptorisMater,
+            ],
+            correct: 0
+          },{ 
+              audio: "19.SumerIsIcumenIn.mp3", 
+              answers: [
+                answers.sumerIsAcumen,
+                answers.motete,
+                answers.estampie,
+                answers.almaRedemptorisMater,
+              ],
+              correct: 0
+            },{ 
+            audio: "20.AdamdelaHalle_LeJeudeRobinEtMarion.mp3", 
+            answers: [
+              answers.adamDeLaHalleLeJeuDeRobin,
+              answers.bernartVentadorLauzeta,
+              answers.machautJaimSans,
+              answers.estampie,
+            ],
+            correct: 0
+          },{ 
+              audio: "21.CanciondeSoldadosCruzadosAlemanes_Palastinalied.mp3",
+              answers: [
+                answers.crusadersPalastinalied,
+                answers.adamDeLaHalleLeJeuDeRobin,
+                answers.estampie,
+                answers.motete,
+              ],
+              correct: 0
+        },{ 
+            audio: "22.Conductus_AveVirgoVirginum.mp3",
+            answers: [
+              answers.conductusAveVirgoVirginum,
+              answers.machautDouceDame,
+              answers.vitryCumStatua,
+              answers.almaRedemptorisMater,
+            ],
+            correct: 0
+          },{ 
+              audio: "23.AlmaRedemptorisMater.mp3",
+              answers: [
+                answers.almaRedemptorisMater,
+                answers.sumerIsAcumen,
+                answers.cantoGregorianoVideruntOmnes,
+                answers.tuPatrisSeptiernus,
+              ],
+              correct: 0
+          }
+        ];
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        shuffleArray(quizData);
+        
+        const quizContainer = document.getElementById("quiz");
+
+        quizData.forEach((q, index) => {
+            const questionDiv = document.createElement("div");
+            questionDiv.classList.add("question");
+
+            const questionNumber = document.createElement("h3");
+            questionNumber.textContent = `Audio ${index + 1}`;
+
+            const audioPlayer = document.createElement("audio");
+            audioPlayer.classList.add("audio-player");
+            audioPlayer.controls = true;
+            audioPlayer.src = q.audio;
+
+            const answersDiv = document.createElement("div");
+            answersDiv.classList.add("answers");
+
+            let answersWithIndexes = q.answers.map((answer, i) => ({ answer, index: i }));
+            shuffleArray(answersWithIndexes);
+
+            answersWithIndexes.forEach(({ answer, index: i }) => {
+                            const label = document.createElement("label");
+                            label.innerHTML = `<input type="radio" name="question${index}" value="${i}"> ${answer}`;
+                            label.addEventListener("click", () => {
+                                audioPlayer.pause();
+                                audioPlayer.currentTime = 0;
+                                checkAnswer(index, i, q.correct, resultDiv);
+                            });
+                            answersDiv.appendChild(label);
+                        });
+
+            const resultDiv = document.createElement("div");
+            resultDiv.classList.add("result");
+
+            questionDiv.appendChild(questionNumber);
+            questionDiv.appendChild(audioPlayer);
+            questionDiv.appendChild(answersDiv);
+            questionDiv.appendChild(resultDiv);
+            quizContainer.appendChild(questionDiv);
+        });
+
+        function checkAnswer(questionIndex, selected, correct, resultDiv) {
+            if (selected === correct) {
+                resultDiv.innerHTML = "Correcto! ✅";
+                resultDiv.style.color = "green";
+            } else {
+                const mensajes = [
+                    "Te equivocaste! ❌",
+                    "Se güalló! ❌",
+                    "Swing abanica! ❌",
+                    "No ❌",  
+                    "En serio? ❌",
+                    "El mio se va a quemar ❌",
+                    "Está fea la cosa... ❌"
+                ]
+                resultDiv.innerHTML = mensajes[Math.floor(Math.random() * mensajes.length)]
+                resultDiv.style.color = "red";
+            }
+        }
+    </script>
+        v1.9.4 Ultima modificación 10-Mar-2025
+  </body>
+</html>
