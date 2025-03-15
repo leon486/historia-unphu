@@ -100,46 +100,70 @@
       ]
       
       const answers_01_01 = {
-        himnoNikkal: {author: "Hammurapi", name: "Himno a Nikkal", period: "antiguo", genre: "Himno", filename: "01-01/01.himnoANikkal.mp3" },
-        epitafioSikilos: {author: "Anónimo", name: "Epitafio de Seikilos", period: "antiguo", genre: "Canción", filename: "01-01/02.EpitafioDeSeikilos.mp3" },
-        tuPatrisSeptiernus: {author: "Anónimo", name: "Organum Paralelo por Quintas: Tu Patris Sempiternus", period: "Medieval", genre: "Organum", filename: "01-01/03.OrganumParaleloPorQuintasTupatrisSempiternus.mp3" },
-        beatrizAChantar: "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
-        vitryCumStatua: "Philippe de Vitry - Cum statua",
-        machautDouceDame: "Guillaume de Machaut - Douce dame jolie",
-        tecumPrincipium: "Anónimo - Tecum Principium",
-        hildgardOrdo: "Hildegard Von Bingen - Ordo Virtutum",
-        landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",
-        machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser",
-        estampie: "Anónimo - Estampie",
-        bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
-        cantiga159NonSofreMaria: "Alfonso X el sabio - Cantiga 159:Non sofre Santa Maria",
-        cantoGregorianoVideruntOmnes: "Anónimo - Viderunt Omnes",
-        guidoDarezzoUtQueantLaxis: "Pablo el Diacono - Ut Queant Laxis",
-        segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
-        landiniCosiPenoso: "Francesco Landini - Così Pensoso",
-        motete: "Anónimo - Factum est salutare/Dominus",
-        sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
-        adamDeLaHalleLeJeuDeRobin: "Adam de la Halle - Le Jeu de Robin et Marion",
-        crusadersPalastinalied: "Walther von der Vogelweide - Palästinalied (Canción de soldados cruzados Alemanes)",
-        conductusAveVirgoVirginum: "Anónimo - Ave Virgo Virginum",
-        almaRedemptorisMater: "Hermann von Reichenau - Alma Redemptoris Mater",
+        himnoNikkal: {
+          author: "Hammurapi", name: "Himno a Nikkal", period: "antiguo", genre: "Himno", filename: "01-01/01.himnoANikkal.mp3" },
+        epitafioSeikilos: {
+          author: "Anónimo", name: "Epitafio de Seikilos", period: "antiguo", genre: "Canción", filename: "01-01/02.EpitafioDeSeikilos.mp3" },
+        tuPatrisSeptiernus: {
+          author: "Anónimo", name: "Organum Paralelo por Quintas: Tu Patris Sempiternus", period: "Medieval", genre: "Organum", filename: "01-01/03.OrganumParaleloPorQuintasTupatrisSempiternus.mp3" },
+        beatrizAChantar: {
+          author: "Beatriz de Dia", name: "A chantar m'er de so q'ieu no voldria", period: "Medieval", genre: "Organum", filename: "01-01/04.BeatrizDeDiaAChantar.mp3" },
+        vitryCumStatua: {
+          author: "Philippe de Vitry", name: "Cum Statua", period: "Medieval", genre: "Organum", filename: "01-01/05.PhilippeDeVitry_CumStatua.mp3" },
+        machautDouceDame: {
+          author: "Guillaume de Machaut", name: "Douce dame jolie", period: "Medieval", genre: "Organum", filename: "01-01/06.GuillaumeDeMachaut_DouceDameJolie.mp3" },
+        tecumPrincipium: {
+          author: "Anónimo", name: "Tecum Principium", period: "Medieval", genre: "Organum", filename: "01-01/07.OldRomanChant_TecumPrincipium.mp3" },
+        hildgardOrdo: {
+          author: "Hildegard Von Bingen", name: "Ordo Virtutum", period: "Medieval", genre: "Organum", filename: "01-01/08.HildegardVinBingen_OrdoVirtutum.mp3" },
+        landiniEccoPrimavera: {
+          author: "Francesco Landini", name: "Ecco La Primavera", period: "Medieval", genre: "Organum", filename: "01-01/09.FrancescoLandini_EccoLaPrimavera.mp3" },
+        machautJaimSans: {
+          author: "Guillaume De Machaut", name: "J'aim Sans Penser", period: "Medieval", genre: "Organum", filename: "01-01/10.GuillaumeDeMachaut-JaimSansPenser.mp3" },
+        estampie: {
+          author: "Anónimo", name: "Estampie", period: "Medieval", genre: "Organum", filename: "01-01/11.Anonimo_estampie.mp3" },
+        bernartVentadorLauzeta: {
+          author: "Bernart de Ventadorn", name: "Can Vei la Lauzeta", period: "Medieval", genre: "Organum", filename: "01-01/12.Ventadorn_CanVeiLaLauzeta.mp3" },
+        cantiga159NonSofreMaria: {
+          author: "Alfonso X el sabio", name: "Cantiga 159: Non sofre Santa Maria", period: "Medieval", genre: "Organum", filename: "01-01/13.Cantiga159_NonSofreSantaMaria.mp3" },
+        cantoGregorianoVideruntOmnes: {
+          author: "Anónimo", name: "Viderunt Omnes", period: "Medieval", genre: "Organum", filename: "01-01/14.cantoGregoriano_videruntOmnes.mp3" },
+        guidoDarezzoUtQueantLaxis: {
+          author: "Pablo el Diacono", name: "Ut Queant Laxis", period: "Medieval", genre: "Organum", filename: "01-01/15.GuidoDarezzo_UtQueantLaxis.mp3"},
+        segundoHimnoDelficoApollo: {
+          author: "Limenio", name: "Segundo Himno Délfico a Apollo", period: "Medieval", genre: "Himno", filename: "01-01/16.SegundoHimnoDelficoaApollo.mp3"},
+        landiniCosiPenoso: {
+          author: "Francesco Landini", name: "Così Pensoso", period: "Medieval", genre: "Caccia", filename: "01-01/17.Landini_cosiPensoso.mp3"},
+        motete: {
+          author: "Anónimo", name: "Factum est salutare/Dominus", period: "Medieval", genre: "Organum", filename: "01-01/18.Motete_FactumEstSalutareDominus.mp3"},
+        sumerIsAcumen: {
+          author: "Anónimo", name: "Sumer Is Acumen In", period: "Medieval", genre: "Organum", filename: "01-01/19.SumerIsIcumenIn.mp3"},
+        adamDeLaHalleLeJeuDeRobin: {
+          author: "Adam de la Halle", name: "Le Jeu de Robin et Marion", period: "Medieval", genre: "Organum", filename: "01-01/20.AdamdelaHalle_LeJeudeRobinEtMarion.mp3"},
+        crusadersPalastinalied: {
+          author: "Walther von der Vogelweide", name: "Palästinalied (Canción de soldados cruzados Alemanes)", period: "Medieval", genre: "Organum", filename: "01-01/21.CanciondeSoldadosCruzadosAlemanes_Palastinalied.mp3"},
+        conductusAveVirgoVirginum: {
+          author: "Anónimo", name: "Ave Virgo Virginum", period: "Medieval", genre: "Organum", filename: "01-01/22.Conductus_AveVirgoVirginum.mp3"},
+        almaRedemptorisMater: {
+          author: "Hermann von Reichenau", name: "Alma Redemptoris Mater", period: "Medieval", genre: "Organum", filename: "01-01/23.AlmaRedemptorisMater.mp3"
+        },
       }
       
         const quiz_01_01 = [
             { 
-                audio: "01.himnoANikkal.mp3", 
+                audio: answers_01_01.himnoNikkal.filename,
                 answers: [
                   answers_01_01.himnoNikkal,
-                  answers_01_01.epitafioSikilos,
+                  answers_01_01.epitafioSeikilos,
                   answers_01_01.sumerIsAcumen,
                   answers_01_01.almaRedemptorisMater
                 ],
                 correct: 0
             },
             { 
-                audio: "02.EpitafioDeSeikilos.mp3", 
+                audio: answers_01_01.epitafioSeikilos.filename,
                 answers: [
-                  answers_01_01.epitafioSikilos,
+                  answers_01_01.epitafioSeikilos,
                   answers_01_01.himnoNikkal,
                   answers_01_01.sumerIsAcumen,
                   answers_01_01.almaRedemptorisMater
@@ -147,7 +171,7 @@
                 correct: 0 
             },
             { 
-                audio: "03.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
+                audio: answers_01_01.tuPatrisSeptiernus.filename, 
                 answers: [
                   answers_01_01.tuPatrisSeptiernus,
                   answers_01_01.cantoGregorianoVideruntOmnes,
@@ -157,7 +181,7 @@
                 correct: 0
             },
             { 
-                audio: "04.BeatrizDeDiaAChantar.mp3", 
+                audio: answers_01_01.beatrizAChantar.filename, 
                 answers: [
                   answers_01_01.beatrizAChantar,
                   answers_01_01.hildgardOrdo,
@@ -167,7 +191,7 @@
                 correct: 0
             },
             { 
-                audio: "05.PhilippeDeVitry_CumStatua.mp3", 
+                audio: answers_01_01.vitryCumStatua.filename,
                 answers: [
                   answers_01_01.vitryCumStatua,
                   answers_01_01.hildgardOrdo,
@@ -177,7 +201,7 @@
                 correct: 0 
             },
             { 
-                audio: "06.GuillaumeDeMachaut_DouceDameJolie.mp3", 
+                audio: answers_01_01.machautDouceDame.filename, 
                 answers: [
                   answers_01_01.vitryCumStatua,
                   answers_01_01.hildgardOrdo,
@@ -187,7 +211,7 @@
                 correct: 2 
             },
             { 
-                audio: "07.OldRomanChant_TecumPrincipium.mp3", 
+                audio: answers_01_01.tecumPrincipium.filename, 
                 answers: [
                   answers_01_01.tecumPrincipium,
                   answers_01_01.cantoGregorianoVideruntOmnes,
@@ -197,7 +221,7 @@
                 correct: 0 
             },
             { 
-                audio: "08.HildegardVinBingen_OrdoVirtutum.mp3", 
+                audio: answers_01_01.hildgardOrdo.filename,
                 answers: [
                   answers_01_01.machautDouceDame,
                   answers_01_01.hildgardOrdo,
@@ -207,7 +231,7 @@
                 correct: 1
             },
             { 
-                audio: "09.FrancescoLandini_EccoLaPrimavera.mp3", 
+                audio: answers_01_01.landiniEccoPrimavera.filename,
                 answers: [
                   answers_01_01.machautDouceDame,
                   answers_01_01.landiniEccoPrimavera,
@@ -217,7 +241,7 @@
                 correct: 1
             },
             { 
-                audio: "10.GuillaumeDeMachaut-JaimSansPenser.mp3", 
+                audio: answers_01_01.machautJaimSans.filename,
                 answers: [
                   answers_01_01.machautJaimSans,
                   answers_01_01.machautDouceDame,
@@ -227,7 +251,7 @@
                 correct: 0
             },
             { 
-                audio: "11.Anonimo_estampie.mp3", 
+                audio: answers_01_01.estampie.filename,
                 answers: [
                   answers_01_01.estampie,
                   answers_01_01.machautJaimSans,
@@ -237,7 +261,7 @@
                 correct: 0
             },
             { 
-                audio: "12.Ventadorn_CanVeiLaLauzeta.mp3", 
+                audio: answers_01_01.bernartVentadorLauzeta.filename,
                 answers: [
                   answers_01_01.bernartVentadorLauzeta,
                   answers_01_01.machautJaimSans,
@@ -247,7 +271,7 @@
                 correct: 0
             },
             { 
-                audio: "13.Cantiga159_NonSofreSantaMaria.mp3", 
+                audio: answers_01_01.cantiga159NonSofreMaria.filename,
                 answers: [
                   answers_01_01.cantiga159NonSofreMaria,
                   answers_01_01.segundoHimnoDelficoApollo,
@@ -257,7 +281,7 @@
                 correct: 0
             },
             { 
-                audio: "14.cantoGregoriano_videruntOmnes.mp3", 
+                audio: answers_01_01.cantoGregorianoVideruntOmnes.filename,
                 answers: [
                   answers_01_01.cantoGregorianoVideruntOmnes,
                   answers_01_01.motete,
@@ -267,7 +291,7 @@
                 correct: 0
             },
             { 
-                audio: "15.GuidoDarezzo_UtQueantLaxis.mp3", 
+                audio: answers_01_01.guidoDarezzoUtQueantLaxis.filename,
                 answers: [
                   answers_01_01.guidoDarezzoUtQueantLaxis,
                   answers_01_01.cantoGregorianoVideruntOmnes,
@@ -276,7 +300,7 @@
                 ],
                 correct: 0
             },{ 
-                audio: "16.SegundoHimnoDelficoaApollo.mp3", 
+                audio: answers_01_01.segundoHimnoDelficoApollo.filename,
                 answers: [
                   answers_01_01.segundoHimnoDelficoApollo,
                   answers_01_01.guidoDarezzoUtQueantLaxis,
@@ -285,7 +309,7 @@
                 ],
                 correct: 0
           },{ 
-              audio: "17.Landini_cosiPensoso.mp3", 
+              audio: answers_01_01.landiniCosiPenoso.filename,
               answers: [
                 answers_01_01.landiniCosiPenoso,
                 answers_01_01.landiniEccoPrimavera,
@@ -294,7 +318,7 @@
               ],
               correct: 0
             },{ 
-            audio: "18.Motete_FactumEstSalutareDominus.mp3", 
+            audio: answers_01_01.motete.filename,
             answers: [
               answers_01_01.motete,
               answers_01_01.cantoGregorianoVideruntOmnes,
@@ -303,7 +327,7 @@
             ],
             correct: 0
           },{ 
-              audio: "19.SumerIsIcumenIn.mp3", 
+              audio: answers_01_01.sumerIsAcumen.filename, 
               answers: [
                 answers_01_01.sumerIsAcumen,
                 answers_01_01.motete,
@@ -312,7 +336,7 @@
               ],
               correct: 0
             },{ 
-            audio: "20.AdamdelaHalle_LeJeudeRobinEtMarion.mp3", 
+            audio: answers_01_01.adamDeLaHalleLeJeuDeRobin.filename,
             answers: [
               answers_01_01.adamDeLaHalleLeJeuDeRobin,
               answers_01_01.bernartVentadorLauzeta,
@@ -321,7 +345,7 @@
             ],
             correct: 0
           },{ 
-              audio: "21.CanciondeSoldadosCruzadosAlemanes_Palastinalied.mp3",
+              audio: answers_01_01.crusadersPalastinalied.filename,
               answers: [
                 answers_01_01.crusadersPalastinalied,
                 answers_01_01.adamDeLaHalleLeJeuDeRobin,
@@ -330,7 +354,7 @@
               ],
               correct: 0
         },{ 
-            audio: "22.Conductus_AveVirgoVirginum.mp3",
+            audio: answers_01_01.conductusAveVirgoVirginum.filename,
             answers: [
               answers_01_01.conductusAveVirgoVirginum,
               answers_01_01.machautDouceDame,
@@ -339,7 +363,7 @@
             ],
             correct: 0
           },{ 
-              audio: "23.AlmaRedemptorisMater.mp3",
+              audio: answers_01_01.almaRedemptorisMater.filename,
               answers: [
                 answers_01_01.almaRedemptorisMater,
                 answers_01_01.sumerIsAcumen,
@@ -420,6 +444,6 @@
             }
         }
     </script>
-        v1.1.1 Ultima modificación 14-Mar-2025
+        v1.1.2 Ultima modificación 14-Mar-2025
   </body>
 </html>
