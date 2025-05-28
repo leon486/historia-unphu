@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="history.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la música occidental 1 - Parte 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .video-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .video {
+            flex: 1;
+            position: relative;
+            padding-bottom: 50.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-item img {
+            width: 100%;
+            min-width: 200px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .title {
+            flex: 1;
+            font-size: 1.2em;
+        }
+        .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .name, .composer, .period, .genre {
+            margin-top: 5px;
+        }
+        @media only screen and (max-width: 579px) {
+            .mobile-content{ display: block !important; }
+            .video{ display: none !important; }
+            .video-item {
+                margin-bottom: 6rem;
+            }
+        }
+        @media only screen and (min-width: 580px) {
+            .mobile-content{ display: none !important; }
+            .video{ display: block !important; }
+        }
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .video-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .video iframe {
+                position: relative;
+                min-height:400px;
+            }
+            .video {
+                padding-bottom: 0%;
+            }
+            .title {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <h1>UNPHU - Historia de la música occidental I, parte 2</h1>
+    <div style="display:flex; gap: 4rem">
+          <div> 
+   <h2>Historia 1</h2>
+    <ul>
+        <li><a href="index.html">Parte 1</a>, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=01_01">Examen de práctica</a></li>
+        <li><a href="index1parte2.html">Parte 2</a>, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=01_02">Examen de práctica</a></li>
+    </ul>
+  </div>
+    <div>
+   <h2>Historia 2</h2>
+    <ul>
+        <li>Parte 1, -</li>
+    </ul>
+  </div>
+    </div>
+    <div class="container">
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=VDR7UEtNI1E" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/VDR7UEtNI1E/0.jpg" alt="Alleluia A newe work">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/VDR7UEtNI1E"
+                        frameborder="0"
+                        class="desktop-content"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="title">
+              <div class="number">1</div>
+              <div class="name">Nombre: Alleluia A newe work</div>
+              <div class="composer">Compositor: John Dunstable</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Carol</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=qQjdEbZH2wI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/qQjdEbZH2wI/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/qQjdEbZH2wI"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">2</div>
+              <div class="name">Nombre: Quam pulchra es</div>
+              <div class="composer">Compositor: John Dunstable</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Antífona</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=_EMbGN2jeno" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/_EMbGN2jeno/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_EMbGN2jeno"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="title">
+              <div class="number">3</div>
+              <div class="name">Nombre: Se la face ay pale</div>
+              <div class="composer">Compositor: Guillaume Dufay</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Ballade</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=LqdMiSCe-_A" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/LqdMiSCe-_A/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/LqdMiSCe-_A" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">4</div>
+              <div class="name">Nombre: Je ne puis vivre ainsi</div>
+              <div class="composer">Compositor: Antoine Busnoys</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Chanson</div>
+            </div>
+        </div>
+        
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=g02eLiO7dP8" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/g02eLiO7dP8/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/g02eLiO7dP8"
+                        height="315"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+                </div>
+            <div class="title">
+              <div class="number">5</div>
+              <div class="name">Nombre: Orsú orsú car' signori</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Comercial Cantado</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=9dYAEpf-A-A" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/9dYAEpf-A-A/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/9dYAEpf-A-A" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">6</div>
+              <div class="name">Nombre: Veni Sancte Spiritus/Veni Creator Spiritus</div>
+              <div class="composer">Compositor: John Dunstable</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Motete</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=MITDlkxmUgI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/MITDlkxmUgI/0.jpg" alt="Tecum Principium">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MITDlkxmUgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">7</div>
+              <div class="name">Nombre: De plus en plus</div>
+              <div class="composer">Compositor: Gilles Binchois</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Chanson</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=wDc8tqmkaV4" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/wDc8tqmkaV4/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/wDc8tqmkaV4" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">8</div>
+              <div class="name">Nombre: L'homme armé (‘El hombre armado’)</div>
+              <div class="composer">Compositor: Anónimo</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Melodía</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=3z3pg7Ocmx8" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/3z3pg7Ocmx8/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3z3pg7Ocmx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">9</div>
+              <div class="name">Nombre: Innsbruck, Ich muss dich lassen</div>
+              <div class="composer">Compositor: Heinrich Isaac</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Lied</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=dkfVzCZ68_Q" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/dkfVzCZ68_Q/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/dkfVzCZ68_Q" allowfullscreen></iframe>
+            </div>
+            <div class="title">
+              <div class="number">10</div>
+              <div class="name">Nombre: Mille regretz</div>
+              <div class="composer">Compositor: Josquin des Prez</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Chanson</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">v1.1.0 - Ultima actualización 27 de Marzo 2025</div>
+</body>
+</html>
