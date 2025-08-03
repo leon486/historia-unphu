@@ -1,1 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="history.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la música occidental 2 - Parte 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .video-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .video {
+            flex: 1;
+            position: relative;
+            padding-bottom: 50.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-item img {
+            width: 100%;
+            min-width: 200px;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .title {
+            flex: 1;
+            font-size: 1.2em;
+        }
+        .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .name, .composer, .period, .genre {
+            margin-top: 5px;
+        }
+        @media only screen and (max-width: 579px) {
+            .mobile-content{ display: block !important; }
+            .video{ display: none !important; }
+            .video-item {
+                margin-bottom: 6rem;
+            }
+        }
+        @media only screen and (min-width: 580px) {
+            .mobile-content{ display: none !important; }
+            .video{ display: block !important; }
+        }
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .video-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .video iframe {
+                position: relative;
+                min-height:400px;
+            }
+            .video {
+                padding-bottom: 0%;
+            }
+            .title {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <h1>UNPHU - Historia de la música occidental II, parte 1</h1>
+    <div style="display:flex; gap: 4rem">
+          <div> 
+   <h2>Historia 1</h2>
+    <ul>
+        <li><a href="index.html">Parte 1</a>, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=01_01">Examen de práctica</a></li>
+        <li><a href="index1parte2.html">Parte 2</a>, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=01_02">Examen de práctica</a></li>
+    </ul>
+  </div>
+    <div>
+   <h2>Historia 2</h2>
+    <ul>
+        <li><a href="historia2parte1.html">Parte 1</a>, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=02_01">Examen de práctica</a></li>
+        <li>Parte 2, <a href="https://leon486.github.io/historia-unphu/quiz/quiz.html?level=02_02">Examen de práctica</a></li>
+    </ul>
+  </div>
+    </div>
+    <div class="container">
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=Y1WwNSfCom8" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/Y1WwNSfCom8/0.jpg" alt="Alleluia A newe work">
+            </a>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Y1WwNSfCom8"
+                        frameborder="0"
+                        class="desktop-content"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="title">
+              <div class="number">1</div>
+              <div class="name">Nombre: If Ye Love Me</div>
+              <div class="composer">Compositor: Thomas Thallis</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Motete</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=3GIorKmcNSI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/3GIorKmcNSI/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/3GIorKmcNSI"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">2</div>
+              <div class="name">Nombre: Hoy Comamos y Bebamos</div>
+              <div class="composer">Compositor: Juan del Encina</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Villancico</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=XITlmDJ9-Hk" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/XITlmDJ9-Hk/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/XITlmDJ9-Hk"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">3</div>
+              <div class="name">Nombre: Il bianco e dolce cigno</div>
+              <div class="composer">Compositor: Jacques Arcadelt</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=dBVIJnqtYfs" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/dBVIJnqtYfs/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/dBVIJnqtYfs"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">4</div>
+              <div class="name">Nombre: In Darkness Let Me Dwell</div>
+              <div class="composer">Compositor: John Dowland</div>
+              <div class="period">Período: Barroco</div>
+              <div class="genre">Género: Canción con Laud</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=9xPh-fXYAc4" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/9xPh-fXYAc4/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/9xPh-fXYAc4"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">5</div>
+              <div class="name">Nombre: O magnum mysterium</div>
+              <div class="composer">Compositor: Tomas Luis de Victoria</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Motete</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=D6TU56BBrPI" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/D6TU56BBrPI/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/D6TU56BBrPI"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">6</div>
+              <div class="name">Nombre: Sonata Pian'e Forte</div>
+              <div class="composer">Compositor: Giovanni Gabrieli</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Sinfonía Sacra</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=Sf_8cEeIcIo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/Sf_8cEeIcIo/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/Sf_8cEeIcIo"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">7</div>
+              <div class="name">Nombre: Io non compro più speranza</div>
+              <div class="composer">Compositor: Marco Cara</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Frottola</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=yD7qRFELl8w" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/yD7qRFELl8w/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/yD7qRFELl8w"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">8</div>
+              <div class="name">Nombre: Tant Que Vivray</div>
+              <div class="composer">Compositor: Claudin de Sermisy</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Chanson</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=2Fao21JPxow" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/2Fao21JPxow/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/2Fao21JPxow"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">9</div>
+              <div class="name">Nombre: Se la Mia Morte Brami</div>
+              <div class="composer">Compositor: Carlo Gesualdo</div>
+              <div class="period">Período: Barroco</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=tQ3XbrnLRM0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/tQ3XbrnLRM0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/tQ3XbrnLRM0"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">10</div>
+              <div class="name">Nombre: It was a Lover and his Lass</div>
+              <div class="composer">Compositor: Thomas Morley</div>
+              <div class="period">Período: Barroco</div>
+              <div class="genre">Género: Canción con Laud</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=bA1YDDLQhIo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/bA1YDDLQhIo/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/bA1YDDLQhIo"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">11</div>
+              <div class="name">Nombre: Or sus, serviteurs du Seigneur</div>
+              <div class="composer">Compositor: Loys Bourgeois</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Salmo Métrico</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=ZJlj1uy8cSA" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/ZJlj1uy8cSA/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/ZJlj1uy8cSA"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">12</div>
+              <div class="name">Nombre: Solo E Pensoso</div>
+              <div class="composer">Compositor: Luca Marenzio</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=uI7QMtXBLgY" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/uI7QMtXBLgY/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/uI7QMtXBLgY"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">13</div>
+              <div class="name">Nombre: Ein Fest Burg Ist Unser Gott (Castillo fuerte es nuestro Dios)</div>
+              <div class="composer">Compositor: Martin Lutero</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Himno</div>
+            </div>
+        </div>
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=NmWSm-4yED0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/NmWSm-4yED0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/NmWSm-4yED0"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">14</div>
+              <div class="name">Nombre: O welt, ich muss dich lassen</div>
+              <div class="composer">Compositor: Heinrich Isaac</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Contrafactum</div>
+            </div>
+        </div>
+         <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=0WTbE9AfcX0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/0WTbE9AfcX0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/0WTbE9AfcX0"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">15</div>
+              <div class="name">Nombre: Missa Papae Marcelli (Misa al Papa Marcelo)</div>
+              <div class="composer">Compositor: Giovanni de Palestrina</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Misa</div>
+            </div>
+        </div>
 
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=0WTbE9AfcX0" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/0WTbE9AfcX0/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/0WTbE9AfcX0"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">16</div>
+              <div class="name">Nombre: Sing Joyfully Unto God</div>
+              <div class="composer">Compositor: William Byrd</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Full Anthem</div>
+            </div>
+        </div>
+
+         <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=cJ8PD6tM0BE" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/cJ8PD6tM0BE/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/cJ8PD6tM0BE"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">17</div>
+              <div class="name">Nombre: Matona, mia cara, mi follere canzon</div>
+              <div class="composer">Compositor: Orlando di Lasso</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=WGNCCSJBPIY" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/WGNCCSJBPIY/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/WGNCCSJBPIY"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">18</div>
+              <div class="name">Nombre: Hanacpachap Cussicuinin</div>
+              <div class="composer">Compositor: Juan Peréz Boca Negra</div>
+              <div class="period">Período: Barroco</div>
+              <div class="genre">Género: Himno Procesional</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=FL9qGarn7JM" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/FL9qGarn7JM/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/FL9qGarn7JM"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">19</div>
+              <div class="name">Nombre: Since Robinhood</div>
+              <div class="composer">Compositor: Thomas Weelkes</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal Inglés</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=bKTQQ28sSNo" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/bKTQQ28sSNo/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/bKTQQ28sSNo"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">20</div>
+              <div class="name">Nombre: Cruda Amarilli</div>
+              <div class="composer">Compositor: Claudio Monteverdi</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=4NBII2K1YnU" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/4NBII2K1YnU/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/4NBII2K1YnU"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">21</div>
+              <div class="name">Nombre: Vecchie letrose</div>
+              <div class="composer">Compositor: Adrian Willaert</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Villanella</div>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=3o0nnxDQOFA" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/3o0nnxDQOFA/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/3o0nnxDQOFA"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">22</div>
+              <div class="name">Nombre: Fantasia en C</div>
+              <div class="composer">Compositor: William Byrd</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Fantasia</div>
+            </div>
+        </div>
+         <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=NjI4NDk5Njc5NDI2" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/NjI4NDk5Njc5NDI2/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/NjI4NDk5Njc5NDI2"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">23</div>
+              <div class="name">Nombre: Pavana, Gallarda y Branle de Champagne</div>
+              <div class="composer">Compositor: Claude Gervaise</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Danza</div>
+            </div>
+        </div>
+         <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=Nd5K2AQvOsg" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/Nd5K2AQvOsg/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/Nd5K2AQvOsg"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">24</div>
+              <div class="name">Nombre: Da le belle contrade</div>
+              <div class="composer">Compositor: Cipriano de Rore</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+         <div class="video-item">
+            <a href="https://www.youtube.com/watch?v=F6CvMbGP3v8" target="_blank" class="mobile-content">
+                <img src="https://img.youtube.com/vi/F6CvMbGP3v8/0.jpg" alt="Himno a nikkal">
+            </a>
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/F6CvMbGP3v8"
+                    height="315"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="desktop-content"
+                    allowfullscreen>
+            </iframe>
+            </div>
+            <div class="title">
+              <div class="number">25</div>
+              <div class="name">Nombre: Vagh' Amorosi Augelli</div>
+              <div class="composer">Compositor: Maddalena Casulana</div>
+              <div class="period">Período: Renacimiento</div>
+              <div class="genre">Género: Madrigal</div>
+            </div>
+        </div>
+        
+    </div>
+    <div style="display: flex; justify-content: flex-end;">v1.0.6 - Ultima actualización 10 de Julio 2025</div>
+</body>
+</html>
