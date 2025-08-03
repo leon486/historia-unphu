@@ -132,6 +132,60 @@
           },
       }
 
+      const answers_02_02 = {
+          whenIAmLaidOnEarth: {
+            name: "When I am lead on Earth",
+            author: "Heinrich Purcel",
+            period: "Barroco",
+            genre: "Aria",
+            filename: "02-02/1.henRyPurcel-WhenIAmLaidInEarth.mp3"
+          },
+          sonataInDMinor: {
+            name: "Oy Comamos y Bevamos", author: "Juan del Encina", period: "Renacimiento", genre: "Villancico", filename: "02-02/2.OyComamosYBevamosJuanDelEncina.mp3"
+          },
+          weihnachtshistorie: {
+            name: "Weihnachtshistorie (Historia de la navidad)", author: "Heinrich Schutz", period: "Barroco", genre: "Historia", filename: "02-02/3.IlBiancoEDolceCignoArcadelt.mp3"
+          },
+          armide: {
+            name: "Armide", author: "Jean Baptiste Lully", period: "Barroco", genre: "Overture", filename: "02-02/4.InDarknessLetMeDwellJohnDowland.mp3"
+          },
+         lagrimaMie: {
+            name: "Lagrima Mie", author: "Barbara Strozzi", period: "Barroco", genre: "Cantata", filename: "02-02/4.InDarknessLetMeDwellJohnDowland.mp3"
+          },
+        jepthe: {
+            name: "Jephte (Plorate filii Israel)", author: "Giacomo Carissimi", period: "Barroco", genre: "Oratorio", filename: "02-02/4.InDarknessLetMeDwellJohnDowland.mp3"
+          },
+        cloriVezzosaeBella: {
+            name: "Clori vezzosa e bella", author: "Alessandor Scarlatti", period: "Barroco", genre: "Cantata", filename: "02-02/4.InDarknessLetMeDwellJohnDowland.mp3"
+          },
+        orpheo: {
+            name: "L’ Orfeo", author: "Claudio Monteverdi", period: "Barroco", genre: "Opera", filename: "02-02/4.InDarknessLetMeDwellJohnDowland.mp3"
+          },
+      }
+
+       const quiz_02_02 = [
+            { 
+                audio: answers_02_02.whenIAmLaidOnEarth.filename, 
+                answers: [
+                  answers_02_01.whenIAmLaidOnEarth,
+                  answers_02_01.lagrimaMia,
+                  answers_02_01.jepthe,
+                  answers_02_01.cloriVezzosaeBella 
+                ],
+                correct: 0
+            },
+            { 
+                audio: answers_02_02.sonataInDMinor.filename, 
+                answers: [
+                  answers_02_01.sonataInDMinor,
+                  answers_02_01.armide,
+                  answers_02_01.weihnachtshistorie,
+                  answers_02_01.orpheo
+                ],
+                correct: 0
+            }
+         ]
+
       const quiz_02_01 = [
             { 
                 audio: answers_02_01.ifYeLoveMe.filename, 
