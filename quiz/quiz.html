@@ -172,6 +172,44 @@
         // amfiparnazzo
       }
 
+      const answers_04_01 = {
+          mazurka: {
+            name: "Mazurka Op 17 No 4",
+            author: "Chopin",
+            period: "Romantico",
+            genre: "Mazurka",
+            filename: "04-01/1_Chopin-Mazurka.mp3"
+          },
+          weddingMarch: {
+            name: "MarchaNupcial", author: "Mendelssohn", period: "Romantico", genre: "?", filename: "04-01/2_Mendelssohn-WeddingMarch.mp3"
+          },
+      }
+
+      const quiz_04_01 = [
+            { 
+                audio: answers_04_01.mazurka.filename, 
+                answers: [
+                  answers_04_01.mazurka,
+                  answers_04_01.weddingMarch,
+                  answers_04_01.weddingMarch,
+                  answers_04_01.weddingMarch 
+                ],
+                correct: 0
+            },
+            { 
+                audio: answers_04_01.weddingMarch.filename, 
+                answers: [
+                  answers_04_01.weddingMarch,
+                  answers_04_01.mazurka,
+                  answers_04_01.mazurka,
+                  answers_04_01.mazurka
+                ],
+                correct: 0
+            },
+            
+         
+         ]
+
        const quiz_02_02 = [
             { 
                 audio: answers_02_02.whenIAmLaidOnEarth.filename, 
@@ -973,7 +1011,8 @@
           '01_01': quiz_01_01,
           '01_02': quiz_01_02,
           '02_01': quiz_02_01,
-          '02_02': quiz_02_02
+          '02_02': quiz_02_02,
+          '04_01': quiz_04_01
         }
 
         const quizData = quizes[level]
