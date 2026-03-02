@@ -183,6 +183,12 @@
           weddingMarch: {
             name: "Marcha Nupcial", author: "Mendelssohn", period: "Romantico", genre: "Orquesta Románticismo Clásico", filename: "04-01/2_Mendelssohn-WeddingMarch.mp3"
           },
+          ohSusanna: {
+            name: "Oh! Susanna", author: "Steven Foster", period: "Romantico", genre: "Canción Folklorica", filename: "04-01/3_StephenFosters-ohSusanna.mp3"
+          },
+          missaSolemnis: {
+            name: "Missa Solemnis", author: "Beethoven", period: "Romantico", genre: "Misa", filename: "04-01/4_Beethoven-MissaSolemnis.mp3"
+          },
       }
 
       const quiz_04_01 = [
@@ -191,8 +197,8 @@
                 answers: [
                   answers_04_01.mazurka,
                   answers_04_01.weddingMarch,
-                  answers_04_01.weddingMarch,
-                  answers_04_01.weddingMarch 
+                  answers_04_01.ohSusanna,
+                  answers_04_01.missaSolemnis 
                 ],
                 correct: 0
             },
@@ -201,8 +207,28 @@
                 answers: [
                   answers_04_01.weddingMarch,
                   answers_04_01.mazurka,
+                  answers_04_01.ohSusanna,
+                  answers_04_01.missaSolemnis
+                ],
+                correct: 0
+            },
+        { 
+                audio: answers_04_01.ohSusanna.filename, 
+                answers: [
+                  answers_04_01.ohSusanna,
                   answers_04_01.mazurka,
-                  answers_04_01.mazurka
+                  answers_04_01.weddingMarch,
+                  answers_04_01.missaSolemnis
+                ],
+                correct: 0
+            },
+        { 
+                audio: answers_04_01.missaSolemnis.filename, 
+                answers: [
+                  answers_04_01.missaSolemnis,
+                  answers_04_01.weddingMarch,
+                  answers_04_01.mazurka,
+                  answers_04_01.ohSusanna
                 ],
                 correct: 0
             },
