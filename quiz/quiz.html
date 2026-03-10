@@ -362,16 +362,136 @@
                 correct: 0
             },
         { 
-                audio: answers_04_01.sinfonia8.filename, 
-                answers: [
-                  answers_04_01.sinfonia8,
-                  answers_04_01.orfeo,
-                  answers_04_01.mazurka,
-                  answers_04_01.laTrucha
-                ],
-                correct: 0
-            },
-            
+          audio: answers_04_01.sinfonia8.filename, 
+          answers: [
+            answers_04_01.sinfonia8,
+            answers_04_01.orfeo,
+            answers_04_01.mazurka,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.margaritaEnLaRuca.filename, 
+          answers: [
+            answers_04_01.margaritaEnLaRuca,
+            answers_04_01.orfeo,
+            answers_04_01.mazurka,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.sinfoniaNo5.filename, 
+          answers: [
+            answers_04_01.sinfoniaNo5,
+            answers_04_01.orfeo,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.violinConcertoEMinor.filename, 
+          answers: [
+            answers_04_01.violinConcertoEMinor,
+            answers_04_01.orfeo,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.pianoConcertoNo5.filename, 
+          answers: [
+            answers_04_01.pianoConcertoNo5,
+            answers_04_01.orfeo,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.chopinNocturneOp9.filename, 
+          answers: [
+            answers_04_01.chopinNocturneOp9,
+            answers_04_01.orfeo,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.erlkonig.filename, 
+          answers: [
+            answers_04_01.erlkonig,
+            answers_04_01.orfeo,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.schumannSinfoniaNo3.filename, 
+          answers: [
+            answers_04_01.schumannSinfoniaNo3,
+            answers_04_01.sinfoniaNo5,
+            answers_04_01.sinfonia8,
+            answers_04_01.laTrucha
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.beethovenSinfonia9.filename, 
+          answers: [
+            answers_04_01.beethovenSinfonia9,
+            answers_04_01.schumannSinfoniaNo3,
+            answers_04_01.sinfonia8,
+            answers_04_01.sinfoniaNo5
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.beethovenSinfonia3.filename, 
+          answers: [
+            answers_04_01.beethovenSinfonia3,
+            answers_04_01.beethovenSinfonia9,
+            answers_04_01.sinfonia8,
+            answers_04_01.sinfoniaNo5
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.schubertLamuerteYLaDoncella.filename, 
+          answers: [
+            answers_04_01.schubertLamuerteYLaDoncella,
+            answers_04_01.beethovenSinfonia9,
+            answers_04_01.sinfonia8,
+            answers_04_01.sinfoniaNo5
+          ],
+          correct: 0
+        },
+        
+        { 
+          audio: answers_04_01.granFuga.filename, 
+          answers: [
+            answers_04_01.granFuga,
+            answers_04_01.beethovenSinfonia9,
+            answers_04_01.sinfonia8,
+            answers_04_01.sinfoniaNo5
+          ],
+          correct: 0
+        },
          
          ]
 
@@ -1211,7 +1331,7 @@
                             label.addEventListener("click", () => {
                                 audioPlayer.pause();
                                 audioPlayer.currentTime = 0;
-                                checkAnswer(index, i, q.correct, resultDiv);
+                                checkAnswer(index, i, q.correct || 0, resultDiv);
                             });
                             answersDiv.appendChild(label);
                         });
@@ -1235,6 +1355,8 @@
                     "Te equivocaste! ❌",
                     "Se güalló! ❌",
                     "Swing abanica! ❌",
+                    "Mano deja esto ❌",
+                    "Y si mejor trabajas en un call center? ❌",
                     "No ❌",  
                     "En serio? ❌",
                     "Equivocado ❌",
