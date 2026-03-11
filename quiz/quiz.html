@@ -495,6 +495,108 @@
          
          ]
 
+       const answers_04_02 = {
+          pucciniNessunDorma: {
+            name: "Nessun Dorma",
+            author: "Giacomo Puccini",
+            period: "Romantico",
+            genre: "Aria",
+            filename: "04-02/1_NessunDorma-GiacomoPuccini.mp3"
+          },
+          straussAlsoSprachZarathrustra: {
+            name: "Also Sprach Zarathrustra",
+            author: "Richart Strauss",
+            period: "Romantico",
+            genre: "Poema Sinfonico",
+            filename: "04-02/2_AlsoSprachZarathrustra-RichartStrauss.mp3"
+          },
+          wagnerCabalgadaDeLasValkirias: {
+            name: "Cabalgada de las valkirias",
+            author: "Richard Wagner",
+            period: "Romantico",
+            genre: "Opera",
+            filename: "04-02/3_CabalgadaDeLasValkirias-RichardWagner.mp3"
+          },
+          rossiniGuillermoTell: {
+            name: "Guillermo Tell",
+            author: "Gioachino Rossini",
+            period: "Romantico",
+            genre: "Overtura / Opera",
+            filename: "04-02/4_GuillermoTell-GioachinoRossini.mp3"
+          },
+          tchaikovskySwanLake: {
+            name: "Swan Lake",
+            author: "Pyotr Tchaikovsky",
+            period: "Romantico",
+            genre: "Ballet",
+            filename: "04-02/5_SwanLake-PyotrTchaikovsky.mp3"
+          },
+          smetanaElMoldava: {
+            name: "El Moldava (The Moldau)",
+            author: "Bedrich Smetana",
+            period: "Romantico",
+            genre: "Poema Sinfonico",
+            filename: "04-02/6_ElMoldava-BedrichSmetana.mp3"
+          },
+          glinkaRusslanYLudmilla: {
+            name: "Russlan y Ludmilla",
+            author: "Mijail Glinka",
+            period: "Romantico",
+            genre: "Overtura / Opera",
+            filename: "04-02/7_RusslanYLudmilla-MijailGlinka.mp3"
+          },
+          rossiniElBarberoDeSevilla: {
+            name: "El barbero de Sevilla",
+            author: "Gioachino Rossini",
+            period: "Romantico",
+            genre: "Aria",
+            filename: "04-02/8_ElBarberoDeSevilla-GioachinoRossini.mp3"
+          },
+          rossiniELucevanLeStelle: {
+            name: "E Lucevan le stelle",
+            author: "Gioachino Rossini",
+            period: "Romantico",
+            genre: "Aria",
+            filename: "04-02/9_ELucevanLeStelle-GioachinoRossini.mp3"
+          },
+          tchaikovskyElCascanueces: {
+            name: "El Cascanueces",
+            author: "Pyotr Tchaikovsky",
+            period: "Romantico",
+            genre: "Ballet",
+            filename: "04-02/10_ElCascanueces-PyotrTchaikovsky.mp3"
+          },
+          brahmsCancionDeCuna: {
+            name: "Cancion de Cuna",
+            author: "Johannes Brahms",
+            period: "Romantico",
+            genre: "Musica para Piano",
+            filename: "04-02/11_CancionDeCuna-JohannesBrahms.mp3"
+          },
+          sousaTheStarsAndStripesForever: {
+            name: "The stars and stripes Forever",
+            author: "John Philip Sousa",
+            period: "Romantico",
+            genre: "Marcha",
+            filename: "04-02/12_TheStarsAndStripesForever-JohnPhilipSousa.mp3"
+          },
+       }
+
+
+      const quiz_04_02 = [
+        { 
+          audio: answers_04_02.pucciniNessunDorma.filename, 
+          answers: [
+            answers_04_02.pucciniNessunDorma,
+            answers_04_02.rossiniElBarberoDeSevilla,
+            answers_04_02.rossiniELucevanLeStelle,
+            answers_04_02.glinkaRusslanYLudmilla
+          ],
+          correct: 0
+        },
+        
+      ]
+
        const quiz_02_02 = [
             { 
                 audio: answers_02_02.whenIAmLaidOnEarth.filename, 
@@ -1297,7 +1399,8 @@
           '01_02': quiz_01_02,
           '02_01': quiz_02_01,
           '02_02': quiz_02_02,
-          '04_01': quiz_04_01
+          '04_01': quiz_04_01,
+          '04_02': quiz_04_02,
         }
 
         const quizData = quizes[level]
@@ -1356,6 +1459,10 @@
                     "Se güalló! ❌",
                     "Swing abanica! ❌",
                     "Mano deja esto ❌",
+                    "Tuñeco ❌",
+                    "Tieso! ❌",
+                    "Incorrecto ❌",
+                    "Retira mano ❌",
                     "Y si mejor trabajas en un call center? ❌",
                     "No ❌",  
                     "En serio? ❌",
